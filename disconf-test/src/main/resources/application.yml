@@ -1,0 +1,34 @@
+
+
+spring:
+  application:
+    name: disconf-yml-test
+  profiles:
+    active: dev
+  disconf:
+    scanpackage:
+      "com.zmx"
+
+server:
+  port: 7030
+
+disconf:
+  global:
+    app: GLOBALPROP
+    version: 1.0.0
+    key: global
+    share: true
+  app: disconf-test
+  conf_server_host: 127.0.0.1:8077
+  conf_server_url_retry_sleep_seconds: 5
+  conf_server_url_retry_times: 3
+  debug: false
+  enable:
+    remote:
+      conf: true
+  env: local
+  ignore: ''
+  properties: ''
+  user_define_download_dir: ./disconf/download
+  version: 1.0.0
+
